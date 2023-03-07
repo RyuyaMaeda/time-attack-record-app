@@ -33,10 +33,14 @@ module.exports = {
       1,
       { extensions: [".js", ".jsx", ".tsx"] },
     ],
+    "arrow-body-style": ["error", "always"],
     "react/function-component-definition": [
       2,
       { namedComponents: "arrow-function" },
     ],
     "import/extensions": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
   },
 };
