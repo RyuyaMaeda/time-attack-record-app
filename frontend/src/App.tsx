@@ -6,7 +6,7 @@ import React, { useState } from "react";
  * project modules
  */
 import { MainLayout } from "./components/MainLayout";
-import { TimeTable } from "./components/TimeTable";
+import { TimeTable } from "./pages/TimeTable";
 /**
  * private modules
  */
