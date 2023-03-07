@@ -38,7 +38,9 @@ export const MainLayout: React.FC<Props> = memo(
         >
           <Heading>Time Attack App</Heading>
         </Flex>
-        <Box p={4}>{children}</Box>
+        <Box p={4} minWidth="1000px">
+          {children}
+        </Box>
       </>
     );
   }
