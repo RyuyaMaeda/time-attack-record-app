@@ -2,11 +2,11 @@
  * node_modules
  */
 import { memo } from "react";
-import { Flex, Box, Heading } from "@chakra-ui/react";
+import { Flex, Box, Heading, HStack, Container } from "@chakra-ui/react";
 /**
  * project modules
  */
-
+import { SideMenu } from "./SideMenu";
 /**
  * private modules
  */
@@ -27,7 +27,7 @@ export type Props = {
 export const MainLayout: React.FC<Props> = memo(
   ({ children }: Props): JSX.Element => {
     return (
-      <>
+      <Container maxWidth="3000px" height="1500px">
         <Flex
           as="header"
           wrap="wrap"
@@ -38,10 +38,15 @@ export const MainLayout: React.FC<Props> = memo(
         >
           <Heading>Time Attack App</Heading>
         </Flex>
-        <Box p={4} minWidth="1000px">
-          {children}
-        </Box>
-      </>
+        <HStack spacing={3} align="start" height="100%" width="100%">
+          <SideMenu />
+          <Box>
+            <Box p={6} width="1000px">
+              {children}
+            </Box>
+          </Box>
+        </HStack>
+      </Container>
     );
   }
 );
