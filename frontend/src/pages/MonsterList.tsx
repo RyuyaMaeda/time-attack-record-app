@@ -12,6 +12,7 @@ import {
   TableContainer,
   VStack,
   Heading,
+  Link,
 } from "@chakra-ui/react";
 /**
  * project modules
@@ -24,7 +25,7 @@ import {
 /**
  * props
  */
-export type Props = never;
+export type Props = unknown;
 
 /**
  * MonsterList Component
@@ -60,7 +61,9 @@ export const MonsterList: React.FC<Props> = memo((): JSX.Element => {
               <Td> </Td>
             </Tr>
             <Tr>
-              <Td>テオテスカトル</Td>
+              <Td>
+                <Link href="/timetable">テオテスカトル</Link>
+              </Td>
               <Td>●</Td>
               <Td>●</Td>
               <Td>●</Td>

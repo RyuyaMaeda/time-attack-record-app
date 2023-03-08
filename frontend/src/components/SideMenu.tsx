@@ -22,12 +22,8 @@ export type Props = unknown;
 export const SideMenu: React.FC<Props> = memo((): JSX.Element => {
   return (
     <VStack height="100%" backgroundColor="gray.300" spacing={3} padding={3}>
-      <Link href="https://dev.classmethod.jp/articles/run-prettiereslint-on-ci-to-fail-workflow-on-violation/">
-        トップページ
-      </Link>
-      <Link href="https://dev.classmethod.jp/articles/run-prettiereslint-on-ci-to-fail-workflow-on-violation/">
-        モンスター一覧
-      </Link>
+      <Link href="/">トップページ</Link>
+      <Link href="/monsterlist">モンスター一覧</Link>
     </VStack>
   );
 });
