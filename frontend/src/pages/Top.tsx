@@ -14,17 +14,12 @@ import { Text, Heading, VStack } from "@chakra-ui/react";
 /**
  * props
  */
-export type Props = {
-  /**
-   * 子要素
-   */
-  children?: React.ReactNode;
-};
+export type Props = unknown;
 
 /**
  * Top Component
  */
-export const Top: React.FC<Props> = memo(({ children }: Props): JSX.Element => {
+export const Top: React.FC<Props> = memo((): JSX.Element => {
   return (
     <VStack textAlign="left" spacing={3}>
       <Heading>はじめにお読みください</Heading>
