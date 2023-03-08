@@ -24,7 +24,7 @@ import {
 /**
  * props
  */
-export type Props = never;
+export type Props = unknown;
 
 /**
  * MonsterList Component
