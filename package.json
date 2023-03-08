@@ -1,0 +1,10 @@
+{
+  "name": "time-attack-record-app",
+  "scripts": {
+    "start:client": "cd frontend && yarn dev",
+    "lint:client": "cd frontend && yarn lint",
+    "test:client": "cd frontend && yarn test",
+    "lint": "yarn lint:client",
+    "test": "yarn test:client"
+  }
+}
