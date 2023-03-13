@@ -112,7 +112,7 @@ export const TimeTable: React.FC<Props> = memo((): JSX.Element => {
                 <Td>画像</Td>
               </Tr>
               <Tr>
-                <Td>2位</Td>
+                <Td>3位</Td>
                 <Td>蛇帝刀ネポスマデュラ</Td>
                 <Td>11:05</Td>
                 <Td>金剛体 真打 抜刀術【技】 弱点特効 集中</Td>

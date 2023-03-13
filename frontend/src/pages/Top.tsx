@@ -24,7 +24,7 @@ export const Top: React.FC<Props> = memo((): JSX.Element => {
     <VStack textAlign="left" spacing={3}>
       <Heading>はじめにお読みください</Heading>
       <Text fontSize="2xl">
-        このアプリは、ta記録のテーブルを自動で集計したいという思いで作りました。
+        このアプリは、既存のwebサイトと比べて、ta記録を自動で集計したいという思いで作りました。
       </Text>
       <Text fontSize="2xl" color="red">
         ※発掘武器を使用したTAは集計していません。
