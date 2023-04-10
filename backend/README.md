@@ -36,16 +36,16 @@ $ yarn install
 
 ```bash
 # コンテナ立ち上げ
-$ `docker compose up -d`
+$ docker compose up -d
 
 # prisma clientのセットアップ
-$ `prisma generate`
+$ npx prisma generate
 
 # マイグレーション
-$ `npx prisma migrate dev`
+$ npx prisma migrate dev
 
-# test coverage
-$ yarn run test:cov
+# GUI Studio立ち上げ
+$ npx prisma studio
 ```
 
 ## Running the app
