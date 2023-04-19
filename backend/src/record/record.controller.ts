@@ -10,7 +10,7 @@ import {
   HttpStatus,
 } from '@nestjs/common';
 import { RecordService } from './record.service';
-import { MonsterService } from './monster.service';
+import { MonsterService } from '../monster/monster.service';
 import { Record } from '@prisma/client';
 import { CreateRecordDto } from './dto/create-record.dto';
 import { UpdateRecordDto } from './dto/update-record.dto';
@@ -43,7 +43,7 @@ export class RecordController {
   async createRecord(
     @Body() createRecordDto: CreateRecordDto,
   ): Promise<Record> {
-    const monster = await this.monsterService.findOne(
+    const monster = await this.monsterService.findById(
       createRecordDto.monster_id,
     );
     if (!monster) {
