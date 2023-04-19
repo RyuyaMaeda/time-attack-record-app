@@ -29,7 +29,7 @@ export class RecordController {
 
   @Get(':id')
   async getRecordById(@Param('id') id: string): Promise<Record> {
-    const record = await this.recordService.findOne(parseInt(id, 10));
+    const record = await this.recordService.findById(parseInt(id, 10));
     if (!record) {
       throw new HttpException(
         'Record with id ${id} not found',
@@ -77,7 +77,7 @@ export class RecordController {
   @Delete(':id')
   async deleteRecord(@Param('id') id: string): Promise<void> {
     const result = await this.recordService.delete(parseInt(id, 10));
-    if (result === 0) {
+    if (!result) {
       throw new HttpException(
         'REcord with id ${id} not found',
         HttpStatus.NOT_FOUND,
