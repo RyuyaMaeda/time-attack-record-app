@@ -9,7 +9,6 @@ import {
   HttpException,
   HttpStatus,
 } from '@nestjs/common';
-import { RecordService } from '../record/record.service';
 import { MonsterService } from './monster.service';
 import { Monster } from '@prisma/client';
 import { CreateMonsterDto } from './dto/create-monster.dto';
@@ -17,10 +16,7 @@ import { UpdateMonsterDto } from './dto/update-monster.dto';
 
 @Controller('monster')
 export class MonsterController {
-  constructor(
-    private readonly recordService: RecordService,
-    private readonly monsterService: MonsterService,
-  ) {}
+  constructor(private readonly monsterService: MonsterService) {}
 
   @Get()
   async getAllMonsters(): Promise<Monster[]> {
